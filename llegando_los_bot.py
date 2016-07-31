@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
 import sys
 import telepot
 from telepot.delegate import per_chat_id, create_open
