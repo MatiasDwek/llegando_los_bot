@@ -43,7 +43,7 @@ class MessageCounter(telepot.helper.ChatHandler):
 						"{0:0=2d}".format(int(msg['text'].split(' ', 1)[1].split(':', 1)[0])) + \
 						":" + \
 						"{0:0=2d}".format(int(msg['text'].split(' ', 1)[1].split(':', 1)[1])) + \
-						"hs.")
+						"hs")
 					else:
 						self.sender.sendMessage("Wrong time format. It should be HOUR:MINUTE, with 0 <= HOUR < 24 and 0 <= MINUTE < 60")
 				except IndexError:
