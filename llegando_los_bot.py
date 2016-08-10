@@ -74,7 +74,7 @@ class MessageCounter(telepot.helper.ChatHandler):
 				try:
 					if ChatData.validate_modulo(int(msg['text'].split(' ', 1)[1])) == True:
 						chats_config[telepot.glance(msg)[2]].schedule_modulo = int(msg['text'].split(' ', 1)[1]);
-						self.sender.sendMessage("Schedule period set to modulo " + msg['text'].split(' ', 1)[1] + ".")
+						self.sender.sendMessage("Schedule period set to modulo " + msg['text'].split(' ', 1)[1])
 					else:
 						self.sender.sendMessage("/set_schedule_period's argument should be an integer between 1 and 31, e.g.: /set_schedule_frequency 2")
 				except IndexError:

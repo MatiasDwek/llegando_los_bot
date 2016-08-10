@@ -10,7 +10,7 @@ class ScheduleTime(object):
 			return False;
 
 class ChatData(object):
-	schedule_active = False
+	schedule_active = True
 	schedule_modulo = 1
 	
 	def __init__(self):
